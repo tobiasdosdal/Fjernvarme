@@ -92,7 +92,7 @@ public class Distrikt {
 
         for (Forbruger forbruger : forbrugere) {
             int maalerNr = forbruger.getMaalerNr();
-            if (maalerNr >= 700 && maalerNr <= 799) {
+            if (maalerNr >= 600 && maalerNr <= 799) {
                 System.out.println(forbruger.getNavn() + " - Målernr: " + maalerNr);
                 found = true;
             }

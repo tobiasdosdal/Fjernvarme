@@ -5,7 +5,7 @@ public class ForbrugerPersistens {
     public static void writeForbrugere(ArrayList<Forbruger> forbrugere) {
         String ForbrugerFile = "forbrugere.txt";
 
-        try (FileWriter writer = new FileWriter(ForbrugerFile, true)) {
+        try (FileWriter writer = new FileWriter(ForbrugerFile, false)) {
             for (Forbruger p : forbrugere) {
                 String navn = p.getNavn();
                 int maalerNr = p.getMaalerNr();
